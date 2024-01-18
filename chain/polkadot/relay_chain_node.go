@@ -9,7 +9,7 @@ import (
 	"time"
 
 	"github.com/avast/retry-go/v4"
-	gsrpc "github.com/centrifuge/go-substrate-rpc-client/v4"
+	gsrpc "github.com/misko9/go-substrate-rpc-client/v4"
 	"github.com/docker/docker/client"
 	"github.com/docker/go-connections/nat"
 

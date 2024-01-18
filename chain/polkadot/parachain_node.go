@@ -10,7 +10,7 @@ import (
 
 	"cosmossdk.io/math"
 	"github.com/avast/retry-go/v4"
-	gsrpc "github.com/centrifuge/go-substrate-rpc-client/v4"
+	gsrpc "github.com/misko9/go-substrate-rpc-client/v4"
 	sdktypes "github.com/cosmos/cosmos-sdk/types"
 	"github.com/docker/docker/client"
 	"github.com/icza/dyno"
