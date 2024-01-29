@@ -5,9 +5,9 @@ import (
 	"math/big"
 	"strconv"
 
-	gsrpc "github.com/misko9/go-substrate-rpc-client/v4"
-	"github.com/misko9/go-substrate-rpc-client/v4/signature"
-	gstypes "github.com/misko9/go-substrate-rpc-client/v4/types"
+	gsrpc "github.com/ComposableFi/go-substrate-rpc-client/v4"
+	"github.com/ComposableFi/go-substrate-rpc-client/v4/signature"
+	gstypes "github.com/ComposableFi/go-substrate-rpc-client/v4/types"
 	"github.com/strangelove-ventures/interchaintest/v6/ibc"
 )
 

@@ -1,6 +1,8 @@
 module github.com/strangelove-ventures/interchaintest/v6
 
-go 1.19
+go 1.21
+
+toolchain go1.21.5
 
 replace (
 	github.com/ChainSafe/go-schnorrkel => github.com/ChainSafe/go-schnorrkel v1.0.0
@@ -9,7 +11,7 @@ replace (
 
 	github.com/tendermint/tendermint => github.com/cometbft/cometbft v0.34.27
 	// github.com/tidwall/btree => github.com/tidwall/btree v1.5.0
-	github.com/vedhavyas/go-subkey => github.com/strangelove-ventures/go-subkey v1.0.7
+	github.com/vedhavyas/go-subkey/v2 => github.com/strangelove-ventures/go-subkey/v2 v2.0.0
 )
 
 require (
@@ -17,6 +19,7 @@ require (
 	github.com/99designs/keyring v1.2.2
 	github.com/BurntSushi/toml v1.3.2
 	github.com/ChainSafe/go-schnorrkel v1.0.0
+	github.com/ComposableFi/go-substrate-rpc-client/v4 v4.0.1-0.20220921072213-b36dd716026d
 	github.com/StirlingMarketingGroup/go-namecase v1.0.0
 	github.com/atotto/clipboard v0.1.4
 	github.com/avast/retry-go/v4 v4.3.4
@@ -32,7 +35,6 @@ require (
 	github.com/hashicorp/go-version v1.6.0
 	github.com/icza/dyno v0.0.0-20220812133438-f0b6f8a18845
 	github.com/libp2p/go-libp2p v0.22.0
-	github.com/misko9/go-substrate-rpc-client/v4 v4.0.0-20230204195103-682c0d5b12fc
 	github.com/mr-tron/base58 v1.2.0
 	github.com/pelletier/go-toml v1.9.5
 	github.com/rivo/tview v0.0.0-20220307222120-9994674d60a8
@@ -75,6 +77,7 @@ require (
 	github.com/cosmos/cosmos-proto v1.0.0-alpha8 // indirect
 	github.com/cosmos/gorocksdb v1.2.0 // indirect
 	github.com/cosmos/iavl v0.19.6 // indirect
+	github.com/cosmos/ibc-go/v5 v5.0.0-beta1 // indirect
 	github.com/cosmos/ledger-cosmos-go v0.12.2 // indirect
 	github.com/danieljoos/wincred v1.1.2 // indirect
 	github.com/deckarep/golang-set v1.8.0 // indirect

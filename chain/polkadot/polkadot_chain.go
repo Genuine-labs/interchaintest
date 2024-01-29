@@ -11,9 +11,9 @@ import (
 
 	"cosmossdk.io/math"
 	"github.com/99designs/keyring"
+	gstypes "github.com/ComposableFi/go-substrate-rpc-client/v4/types"
+	"github.com/ComposableFi/go-substrate-rpc-client/v4/signature"
 	"github.com/StirlingMarketingGroup/go-namecase"
-	"github.com/misko9/go-substrate-rpc-client/v4/signature"
-	gstypes "github.com/misko9/go-substrate-rpc-client/v4/types"
 	sdktypes "github.com/cosmos/cosmos-sdk/types"
 	"github.com/cosmos/go-bip39"
 	"github.com/docker/docker/api/types"

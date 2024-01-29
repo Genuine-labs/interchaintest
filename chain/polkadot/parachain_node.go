@@ -9,8 +9,8 @@ import (
 	"strings"
 
 	"cosmossdk.io/math"
+	gsrpc "github.com/ComposableFi/go-substrate-rpc-client/v4"
 	"github.com/avast/retry-go/v4"
-	gsrpc "github.com/misko9/go-substrate-rpc-client/v4"
 	sdktypes "github.com/cosmos/cosmos-sdk/types"
 	"github.com/docker/docker/client"
 	"github.com/icza/dyno"
