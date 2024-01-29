@@ -6,11 +6,12 @@ toolchain go1.21.5
 
 replace (
 	github.com/ChainSafe/go-schnorrkel => github.com/ChainSafe/go-schnorrkel v1.0.0
+	github.com/ComposableFi/go-substrate-rpc-client/v4 => github.com/Genuine-labs/go-substrate-rpc-client/v4 v4.0.0-terra
 	github.com/btcsuite/btcd => github.com/btcsuite/btcd v0.22.2 //indirect
 	github.com/gogo/protobuf => github.com/regen-network/protobuf v1.3.3-alpha.regen.1
 	github.com/strangelove-ventures/interchaintest/v6 => ../
 	github.com/tendermint/tendermint => github.com/cometbft/cometbft v0.34.27
-	github.com/vedhavyas/go-subkey/v2 => github.com/strangelove-ventures/go-subkey/v2 v2.0.0
+	github.com/vedhavyas/go-subkey/v2 => github.com/ComposableFi/go-subkey/v2 v2.0.0
 )
 
 require (
@@ -36,7 +37,6 @@ require (
 	github.com/99designs/keyring v1.2.2 // indirect
 	github.com/BurntSushi/toml v1.3.2 // indirect
 	github.com/ChainSafe/go-schnorrkel v1.0.0 // indirect
-	github.com/ComposableFi/go-subkey/v2 v2.0.0-tm03420 // indirect
 	github.com/ComposableFi/go-substrate-rpc-client/v4 v4.0.1-0.20220921072213-b36dd716026d // indirect
 	github.com/Microsoft/go-winio v0.6.0 // indirect
 	github.com/StirlingMarketingGroup/go-namecase v1.0.0 // indirect
@@ -177,6 +177,7 @@ require (
 	github.com/tendermint/tm-db v0.6.7 // indirect
 	github.com/tidwall/btree v1.5.0 // indirect
 	github.com/ulikunitz/xz v0.5.8 // indirect
+	github.com/vedhavyas/go-subkey/v2 v2.0.0 // indirect
 	github.com/zondax/hid v0.9.2 // indirect
 	github.com/zondax/ledger-go v0.14.3 // indirect
 	go.etcd.io/bbolt v1.3.7 // indirect

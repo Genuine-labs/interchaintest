@@ -6,12 +6,13 @@ toolchain go1.21.5
 
 replace (
 	github.com/ChainSafe/go-schnorrkel => github.com/ChainSafe/go-schnorrkel v1.0.0
+	github.com/ComposableFi/go-substrate-rpc-client/v4 => github.com/Genuine-labs/go-substrate-rpc-client/v4 v4.0.0-terra
 	github.com/btcsuite/btcd => github.com/btcsuite/btcd v0.22.2
 	github.com/gogo/protobuf => github.com/regen-network/protobuf v1.3.3-alpha.regen.1
 
 	github.com/tendermint/tendermint => github.com/cometbft/cometbft v0.34.27
 	// github.com/tidwall/btree => github.com/tidwall/btree v1.5.0
-	github.com/vedhavyas/go-subkey/v2 => github.com/strangelove-ventures/go-subkey/v2 v2.0.0
+	github.com/vedhavyas/go-subkey/v2 => github.com/ComposableFi/go-subkey/v2 v2.0.0
 )
 
 require (
@@ -19,7 +20,7 @@ require (
 	github.com/99designs/keyring v1.2.2
 	github.com/BurntSushi/toml v1.3.2
 	github.com/ChainSafe/go-schnorrkel v1.0.0
-	github.com/ComposableFi/go-substrate-rpc-client/v4 v4.0.1-0.20220921072213-b36dd716026d
+	github.com/ComposableFi/go-substrate-rpc-client/v4 v4.0.0
 	github.com/StirlingMarketingGroup/go-namecase v1.0.0
 	github.com/atotto/clipboard v0.1.4
 	github.com/avast/retry-go/v4 v4.3.4
@@ -59,7 +60,6 @@ require (
 	cosmossdk.io/errors v1.0.0-beta.7 // indirect
 	filippo.io/edwards25519 v1.0.0-rc.1 // indirect
 	github.com/99designs/go-keychain v0.0.0-20191008050251-8e49817e8af4 // indirect
-	github.com/ComposableFi/go-subkey/v2 v2.0.0-tm03420 // indirect
 	github.com/Microsoft/go-winio v0.6.0 // indirect
 	github.com/armon/go-metrics v0.4.1 // indirect
 	github.com/aws/aws-sdk-go v1.40.45 // indirect
@@ -186,6 +186,7 @@ require (
 	github.com/tendermint/tm-db v0.6.7 // indirect
 	github.com/tidwall/btree v1.5.0 // indirect
 	github.com/ulikunitz/xz v0.5.8 // indirect
+	github.com/vedhavyas/go-subkey/v2 v2.0.0 // indirect
 	github.com/zondax/hid v0.9.1 // indirect
 	github.com/zondax/ledger-go v0.14.1 // indirect
 	go.etcd.io/bbolt v1.3.6 // indirect
