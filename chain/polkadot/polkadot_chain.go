@@ -11,6 +11,8 @@ import (
 
 	"cosmossdk.io/math"
 	"github.com/99designs/keyring"
+	"github.com/ComposableFi/go-substrate-rpc-client/v4/signature"
+	gstypes "github.com/ComposableFi/go-substrate-rpc-client/v4/types"
 	"github.com/StirlingMarketingGroup/go-namecase"
 	sdktypes "github.com/cosmos/cosmos-sdk/types"
 	"github.com/cosmos/go-bip39"
@@ -20,8 +22,6 @@ import (
 	dockerclient "github.com/docker/docker/client"
 	"github.com/icza/dyno"
 	p2pcrypto "github.com/libp2p/go-libp2p/core/crypto"
-	"github.com/misko9/go-substrate-rpc-client/v4/signature"
-	gstypes "github.com/misko9/go-substrate-rpc-client/v4/types"
 	"github.com/strangelove-ventures/interchaintest/v7/ibc"
 	"github.com/strangelove-ventures/interchaintest/v7/internal/blockdb"
 	"github.com/strangelove-ventures/interchaintest/v7/internal/dockerutil"

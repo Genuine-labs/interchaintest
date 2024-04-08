@@ -253,9 +253,9 @@ func TestHyperspace(t *testing.T) {
 	require.NoError(t, err)
 
 	// Verify tokens arrived on parachain user
-	parachainUserStake, err := polkadotChain.GetIbcBalance(ctx, string(polkadotUser.Address()), 2)
+	parachainUserStake, err := polkadotChain.GetIbcBalance(ctx, string(polkadotUser.Address()))
 	require.NoError(t, err)
-	require.Equal(t, amountToSend, parachainUserStake.Amount.Int64(), "parachain user's stake amount not expected after first tx")
+	require.Equal(t, amountToSend, parachainUserStake[0].Amount.Int64(), "parachain user's stake amount not expected after first tx")
 
 	// Send 1.16 stake from parachainUser to cosmosUser
 	amountToReflect := int64(1_160_000)
@@ -298,14 +298,14 @@ func TestHyperspace(t *testing.T) {
 	require.True(t, cosmosUserUnitBal.Equal(amountUnits))
 
 	// Verify parachain user's final "unit" balance (will be less than expected due gas costs for stake tx)
-	parachainUserUnits, err := polkadotChain.GetIbcBalance(ctx, string(polkadotUser.Address()), 1)
+	parachainUserUnits, err := polkadotChain.GetIbcBalance(ctx, string(polkadotUser.Address()))
 	require.NoError(t, err)
-	require.True(t, parachainUserUnits.Amount.LTE(math.NewInt(fundAmount)), "parachain user's final unit amount not expected")
+	require.True(t, parachainUserUnits[0].Amount.LTE(math.NewInt(fundAmount)), "parachain user's final unit amount not expected")
 
 	// Verify parachain user's final "stake" balance
-	parachainUserStake, err = polkadotChain.GetIbcBalance(ctx, string(polkadotUser.Address()), 2)
+	parachainUserStake, err = polkadotChain.GetIbcBalance(ctx, string(polkadotUser.Address()))
 	require.NoError(t, err)
-	require.True(t, parachainUserStake.Equal(math.NewInt(amountToSend-amountToReflect)), "parachain user's final stake amount not expected")
+	require.True(t, parachainUserStake[1].Equal(math.NewInt(amountToSend-amountToReflect)), "parachain user's final stake amount not expected")
 }
 
 type GetCodeQueryMsgResponse struct {
